@@ -1,0 +1,118 @@
+*{
+    font-family:fantasy;
+}
+
+body{
+    background-color: #3167b2;
+    object-fit: cover;
+}
+
+h1{
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+}
+
+h2{
+    font-size: medium;
+    text-align: center;
+    padding: 15px;
+}
+/*index.html*/
+.pokebienvenida{
+    display: flex;
+    justify-content: center;
+}
+
+.pokeLogo{
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.pokeLogo img{
+    width: 600px;
+    height: 400px;
+    object-fit:contain;
+}
+
+.pokeBola{
+    width: 20rem;
+    height: 20rem;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 2s;
+    box-shadow: 10px 10px 10px #1c2c5c;
+}
+
+.pokeBola:hover{
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+.pokeface {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.pokedetras{
+    transform: rotateY(180deg);
+}
+
+
+.pokeBola::before{ /*selector before hace que aparezcan los contenidos antes*/
+    content: '';
+    width: 20rem;
+    height: 10rem;
+    background: red;
+    border-radius: 10rem 10rem  0 0;
+    position: absolute;
+}
+
+.detallepokeBola{
+    width: 20rem;
+    height: 0.8rem;
+    background: #333;
+    margin-top: 9.40rem;
+    position: relative;
+}
+
+.detallepokeBola::before{
+    content: '';
+    width: 6rem;
+    height: 6rem;
+    background: #333;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -2.1rem;
+    margin-left: 7rem;
+}
+
+.detallepokeBola::after{
+    content: '';
+    width: 4rem;
+    height: 4rem;
+    background: #FFF;
+    border-radius: 50%;
+    margin-top: -1rem;
+    margin-left: 8em;
+    position: absolute;
+}
+
+.pokeboton{
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 20px;
+    color: black;
+    margin-top: -0rem;
+    margin-left: 8.5rem;
+    position: absolute;
+    z-index: 1;
+}
+
+/*pokedex.html*/

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style_pokedex.css">
+</head>
+<body>
+    <div class="pokequien">
+        <a><img src="https://fontmeme.com/permalink/220319/317fb073dd70168e42f1d89b995acf2a.png" alt="doblar-imagenes"></a><br>
+        <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
+        <button onclick="fetchPokemon()">Buscar</button>
+    </div>
+    <div class="contenedor1">
+        <div class="caja1">
+            <div class="caja1-pokecarta">
+                <img src="images/7.jpg" alt="Pokemon" id="pokeImg" width="100%">
+                <p id="pokeNom">Pokemon</p>
+                <p id="pokeOrden"></p>
+            </div>
+        </div>
+        <div class="caja2">
+            <br>
+            <div class="caja2-rayas1"></div>
+            <br>
+            <div class="caja2-rayas2"></div>
+            <div class="caja2-rayas3"></div>
+            <div class="caja2-rayas1"></div>
+            <br>
+            <div class="caja2-rayas2"></div>
+        </div>
+        <div class="caja3">
+            <div class="caja3-pokedatos">
+                <div data-poke-stats class="caja3-pokestats"></div><br>
+            </div>
+            <div class="caja3-botonesazul">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="caja3-botonesnegro"></div>
+            <div class="caja3-botonesnegro1"></div>
+            <div class="caja3-botonesblancos">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="caja3-botonamarillo"></div>
+            <div class="caja3-pokedatos1">
+                <p id="poketype"></p>
+            </div>
+            <div class="caja3-pokedatos2">
+                <p id="poketype1"></p>
+            </div>
+        </div>
+        <div class="Arriba1">
+                <div class="Arriba1-botonazul"></div><br>
+                <div class="Arriba1-botoncito1"></div>
+                <div class="Arriba1-botoncito2"></div>
+                <div class="Arriba1-botoncito3"></div>        
+        </div>
+    </div>
+</body>
+<footer>    
+    <script src="./pokedex.js"></script>
+</footer>
+</html>
